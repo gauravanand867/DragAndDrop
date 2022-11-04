@@ -1,0 +1,39 @@
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+   .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box.over {
+    border: 3px dotted #666;
+  }
+  .tableCell{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 200px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+
+  }
+  [draggable] {
+    user-select: none;
+  }
